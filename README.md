@@ -9,6 +9,8 @@ A simple demo for low-rank matrix completion, including the following methods:
 > [Nie, Feiping and Wang, Hua and Cai, Xiao and Huang, Heng and Ding, Chris, "Robust matrix completion via joint schatten p-norm and lp-norm minimization", *2012 IEEE 12th International Conference on Data Mining*, 2012.](https://ieeexplore.ieee.org/abstract/document/6413869/ "https://ieeexplore.ieee.org/abstract/document/6413869/")
 * TNNR-ADMM: <br>
 > [Hu, Yao and Zhang, Debing and Ye, Jieping and Li, Xuelong and He, Xiaofei, "Fast and accurate matrix completion via truncated nuclear norm regularization", *IEEE transactions on pattern analysis and machine intelligence*, 2012.](https://ieeexplore.ieee.org/abstract/document/6389682/ "https://ieeexplore.ieee.org/abstract/document/6389682/")
+* Sp-lp-new:
+> [Nie, Feiping and Wang, Hua and Huang, Heng and Ding, Chris, "Joint Schatten p-norm and lp-norm robust matrix completion for missing value recovery", *Knowledge and Information Systems*, 2015.](https://link.springer.com/article/10.1007/s10115-013-0713-z "https://link.springer.com/article/10.1007/s10115-013-0713-z")
 * ...
 
 If you want to know more about matrix completion, please refer to this paper:
