@@ -65,6 +65,13 @@ TNNR_recon_G = TNNR_ADMM(mask_G,mask,beta,rank_r,maxIter,tol);
 TNNR_recon_B = TNNR_ADMM(mask_B,mask,beta,rank_r,maxIter,tol);
 TNNR_image = cat(3,TNNR_recon_R,TNNR_recon_G,TNNR_recon_B);
 
+%% Sp-lp-new
+gamma = 1; p1 = 0.1; p2 = 0.2;
+Sp_lp_new_recon_R = Sp_lp_new(mask_R,mask,gamma,p1,p2,maxIter,tol);
+Sp_lp_new_recon_G = Sp_lp_new(mask_G,mask,gamma,p1,p2,maxIter,tol);
+Sp_lp_new_recon_B = Sp_lp_new(mask_B,mask,gamma,p1,p2,maxIter,tol);
+Sp_lp_new_image = cat(3,Sp_lp_new_recon_R,Sp_lp_new_recon_G,Sp_lp_new_recon_B);
+
 %% Experimental results
 figure; imshow(image,[]); title('Original image','FontSize',15,'FontName','Times New Roman'); 
 figure; imshow(mask_image,[]); title(['Masked image (sampling rate = ', num2str(samp_rate),')'],'FontSize',15,'FontName','Times New Roman'); 
@@ -72,4 +79,4 @@ figure; imshow(SVP_image,[]); title('Recovered image by SVP','FontSize',15,'Font
 figure; imshow(SVT_image,[]); title('Recovered image by SVT','FontSize',15,'FontName','Times New Roman'); 
 figure; imshow(Sp_lp_image,[]); title('Recovered image by Sp-lp','FontSize',15,'FontName','Times New Roman'); 
 figure; imshow(TNNR_image,[]); title('Recovered image by TNNR-ADMM','FontSize',15,'FontName','Times New Roman'); 
-
+figure; imshow(Sp_lp_new_image,[]); title('Recovered image by Sp-lp-new','FontSize',15,'FontName','Times New Roman'); 
