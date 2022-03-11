@@ -6,9 +6,10 @@
 % -- SVT
 % -- Sp-lp
 % -- TNNR 
+% -- Sp-lp-new
 %
 % Author: Hao Liang 
-% Last modified by: 21/09/12
+% Last modified by: 22/03/11
 %
 
 %% Experiment setup
